@@ -1,0 +1,987 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <meta name="description" content="">
+        <meta name="author" content="">
+
+        <title>Online learning</title>
+
+        <!-- CSS FILES -->                
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+        <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400&display=swap" rel="stylesheet">
+
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+
+        <link href="css/bootstrap-icons.css" rel="stylesheet">
+
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+
+        <link href="css/temp.css" rel="stylesheet">
+        
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+<!--
+
+-->
+    </head>
+    
+    <body>
+
+        <main>
+
+            <nav class="navbar navbar-expand-lg">                
+                <div class="container">
+                    <a class="navbar-brand d-flex align-items-center" href="index.html">
+                        <img src="images/logo.png" class="navbar-brand-image img-fluid" alt="SaladKids">
+                        <span class="navbar-brand-text">
+                            SaladKids
+                            <small>線上和私人教育</small>
+                        </span>
+                    </a>
+
+                    <div class="d-lg-none ms-auto me-3">
+                        <a class="btn custom-btn custom-border-btn" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" aria-controls="offcanvasExample">Free Trail</a>
+                    </div>
+    
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+    
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav ms-lg-auto">
+                            <li class="nav-item">
+                                <a class="nav-link click-scroll" href="#section_1" style="font-size: 19px">主頁</a>
+                            </li>
+    
+                            <li class="nav-item">
+                                <a class="nav-link click-scroll" href="#section_2" style="font-size: 19px">關於我們</a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link click-scroll" href="#section_3" style="font-size: 19px">英語課程</a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link click-scroll" href="#section_4" style="font-size: 19px">最新活動</a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link click-scroll" href="#section_5" style="font-size: 19px">聯絡我們</a>
+                            </li>
+
+                            <!-- <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarLightDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">Pages</a>
+
+                                <ul class="dropdown-menu dropdown-menu-light" aria-labelledby="navbarLightDropdownMenuLink">
+                                    <li><a class="dropdown-item" href="event-listing.html">Event Listing</a></li>
+
+                                    <li><a class="dropdown-item" href="event-detail.html">Event Detail</a></li>
+                                </ul>
+                            </li> -->
+
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarLightDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false"><i class="fas fa-language" style="margin-right: 8px; font-size: 22px;"></i><span style="color: rgb(191, 14, 14); font-size: 19px;">語言</span></a></a>
+
+                                <ul class="dropdown-menu dropdown-menu-light" aria-labelledby="navbarLightDropdownMenuLink">
+                                    <li><a class="dropdown-item" href="index.html">English</a></li>
+
+                                    <li><a class="dropdown-item" href="event-Chinese_Sim.html">简单</a></li>
+                                </ul>
+                            </li>
+                            <!-- <li class="nav-item">
+                                <a class="nav-link click-scroll" href="event-Chinese.html"> -->
+                                <!-- <i class="fas fa-language"></i> 中文</a> -->
+                                <!-- <i class="fas fa-language" style="margin-right: 8px; font-size: 20px;"></i><span style="color: rgb(191, 14, 14);">中文</span></a> -->
+                                <!-- <i class="fa-solid fa-language" style="margin-right: 8px; font-size: 20px;"></i><span style="color: rgb(191, 14, 14);">中文</span></a> -->
+                            <!-- </li> -->
+                        </ul>
+
+                        <div class="d-none d-lg-block ms-lg-3">
+                            <a class="btn custom-btn custom-border-btn" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" aria-controls="offcanvasExample" style="font-size: 20px;">免費試用課程</a>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+
+            <div class="offcanvas offcanvas-end" data-bs-scroll="true" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">                
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="offcanvasExampleLabel" style="color: aliceblue;">Free Trail Session</h5>
+                    
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                
+                <div class="offcanvas-body d-flex flex-column">
+                    <!-- <form class="custom-form member-login-form" action="#" method="post" role="form">
+
+                        <div class="member-login-form-body">
+                            <div class="mb-4">
+                                <label class="form-label mb-2" for="member-login-number">Name</label>
+
+                                <input type="text" name="member-login-number" id="member-login-number" class="form-control" placeholder="abcdef" required>
+                            </div>
+
+                            <div class="mb-4">
+                                <label class="form-label mb-2" for="member-login-password">Password</label>
+
+                                <input type="password" name="member-login-password" id="member-login-password" pattern="[0-9a-zA-Z]{4,10}" class="form-control" placeholder="Password" required="">
+                            </div>
+
+                            <div class="form-check mb-4">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                              
+                                <label class="form-check-label" for="flexCheckDefault">
+                                    Remember me
+                                </label>
+                            </div>
+
+                            <div class="col-lg-5 col-md-7 col-8 mx-auto">
+                                <button type="submit" class="form-control">Login</button>
+                            </div>
+
+                            <div class="text-center my-4">
+                                <a href="#">Forgotten password?</a>
+                            </div>
+                        </div>
+                    </form> -->
+
+                    <form id="contact-form-2" class="custom-form member-login-form" role="form">
+                        <div class="member-login-form-body">
+                          <div class="mb-4">
+                            <label class="form-label mb-2" for="full-name-2" style="color: #FFD54F;">全名</label>
+                            <input
+                              type="text"
+                              name="full-name"
+                              id="full-name-2"
+                              class="form-control"
+                              placeholder="Full Name"
+                              required
+                            />
+                          </div>
+                      
+                          <div class="mb-4">
+                            <label class="form-label mb-2" for="email-2" style="color: lightblue;">電子郵件</label>
+                            <input
+                              type="email"
+                              name="email"
+                              id="email-2"
+                              pattern="[^ @]+@[^ @]+"
+                              class="form-control"
+                              placeholder="email@gmail.com" 
+                              required
+                            />
+                          </div>
+                      
+                          <div class="mb-4">
+                            <label class="form-label mb-2" for="message-2" style="color:#FFD54F;">你想學什麼以及你的聯絡電話（微信/viber）...</label>
+                            <textarea
+                              name="message"
+                              id="message-2"
+                              class="form-control"
+                              placeholder="Describe message here"
+                              required
+                            ></textarea>
+                          </div>
+                      
+                          <div class="col-lg-5 col-md-7 col-8 mx-auto">
+                            <button type="submit" id="send-button-2" class="form-control">提交訊息</button>
+                          </div>
+                        </div>
+                    </form>
+
+                    <div id="response-message-2" style="margin-top: 10px;"></div>
+                      
+
+                    <div class="mt-auto mb-5">
+                        <p>
+                            <strong class="text-white me-3">Any Questions?</strong>
+
+                            <a href="mailto:saladkids@zohomail.com" class="contact-link" style="color: #FFD54F;">
+                            	saladkids@zohomail.com
+                            </a>
+                        </p>
+                    </div>
+                </div>
+
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#8FC2E3" fill-opacity="1" d="M0,224L34.3,192C68.6,160,137,96,206,90.7C274.3,85,343,139,411,144C480,149,549,107,617,122.7C685.7,139,754,213,823,240C891.4,267,960,245,1029,224C1097.1,203,1166,181,1234,160C1302.9,139,1371,117,1406,106.7L1440,96L1440,320L1405.7,320C1371.4,320,1303,320,1234,320C1165.7,320,1097,320,1029,320C960,320,891,320,823,320C754.3,320,686,320,617,320C548.6,320,480,320,411,320C342.9,320,274,320,206,320C137.1,320,69,320,34,320L0,320Z"></path></svg>
+            </div>
+            
+
+            <section class="hero-section d-flex justify-content-center align-items-center" id="section_1">
+
+                <div class="section-overlay"></div>
+
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#8FC2E3" fill-opacity="1" d="M0,224L34.3,192C68.6,160,137,96,206,90.7C274.3,85,343,139,411,144C480,149,549,107,617,122.7C685.7,139,754,213,823,240C891.4,267,960,245,1029,224C1097.1,203,1166,181,1234,160C1302.9,139,1371,117,1406,106.7L1440,96L1440,0L1405.7,0C1371.4,0,1303,0,1234,0C1165.7,0,1097,0,1029,0C960,0,891,0,823,0C754.3,0,686,0,617,0C548.6,0,480,0,411,0C342.9,0,274,0,206,0C137.1,0,69,0,34,0L0,0Z"></path></svg>
+
+                <div class="container">
+                    <div class="row">
+
+                        <div class="col-lg-6 col-12 mb-5 mb-lg-0">
+                            <h2 class="text-white">歡迎來到 SaladKids </h2>
+
+                            <h1 class="cd-headline rotate-1 text-white mb-4 pb-2">
+                                <span>我們做</span>
+                                <span class="cd-words-wrapper">
+                                    <b class="is-visible">現代學習!</b>
+                                    <b>創新學習!</b>
+                                    <b>生活方式學習!</b>
+                                </span>
+                            </h1>
+
+                            <div class="custom-btn-group">
+                                <!-- <a href="#section_2" class="btn custom-btn smoothscroll me-3">Our Story</a> -->
+
+                                <!-- <a href="#section_3" class="link smoothscroll">Join us NOW!</a> -->
+                            </div>
+                        </div>
+
+                        <!-- <div class="col-lg-6 col-12">
+                            <div class="ratio ratio-16x9">
+                                <iframe width="560" height="315" src="https://www.youtube.com/embed/MGNgbNGOzh8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                            </div>
+                        </div> -->
+
+                    </div>
+                </div>
+
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#ffffff" fill-opacity="1" d="M0,224L34.3,192C68.6,160,137,96,206,90.7C274.3,85,343,139,411,144C480,149,549,107,617,122.7C685.7,139,754,213,823,240C891.4,267,960,245,1029,224C1097.1,203,1166,181,1234,160C1302.9,139,1371,117,1406,106.7L1440,96L1440,320L1405.7,320C1371.4,320,1303,320,1234,320C1165.7,320,1097,320,1029,320C960,320,891,320,823,320C754.3,320,686,320,617,320C548.6,320,480,320,411,320C342.9,320,274,320,206,320C137.1,320,69,320,34,320L0,320Z"></path></svg>
+            </section>
+
+
+            <section class="about-section section-padding" id="section_2">
+                <div class="container">
+                    <div class="row">
+
+                        <div class="col-lg-12 col-12 text-center">
+                            <h2 class="mb-lg-5 mb-4">關於我們</h2>
+                        </div>
+
+                        <div class="col-lg-5 col-12 me-auto mb-4 mb-lg-0">
+                            <h3 class="mb-3">我們的故事</h3>
+
+                            <p><strong>教師 Micheal & Sandy</strong>香港最大規模的英語補習機構，為 3 至 12 歲兒童提供課 外英語學習課程。我們的目標是將西方文化環境融入我們的教室，讓兒童有機 會接觸全英語文化，課程更可幫助孩子在智力，社交，大小肌肉和情感等能力 上作多方面發展。</p>
+
+                            <p>Together, as one dedicated team, we create meaningful educational experiences that empower children to reach their full potential. We cultivate creativity and critical thinking to shape confident, knowledgeable learners for tomorrow.</p>
+                        </div>
+
+                        <div class="col-lg-3 col-md-6 col-12 mb-4 mb-lg-0 mb-md-0">
+                            <div class="member-block">
+                                <div class="member-block-image-wrap">
+                                    <img src="images/members/portrait-young-handsome-businessman-wearing-suit-standing-with-crossed-arms-with-isolated-studio-white-background.jpg" class="member-block-image img-fluid" alt="">
+
+                                    <ul class="social-icon">
+                                        <li class="social-icon-item">
+                                            <a href="#" class="social-icon-link bi-whatsapp"></a>
+                                        </li>
+                                        <li class="social-icon-item">
+                                            <a href="#" class="social-icon-link bi-wechat"></a>
+                                        </li>
+                                    </ul>
+                                </div>
+
+                                <div class="member-block-info d-flex align-items-center">
+                                    <h4>Michael</h4>
+
+                                    <p class="ms-auto">英語老師</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-3 col-md-6 col-12">
+                            <div class="member-block">
+                                <div class="member-block-image-wrap">
+                                    <img src="images/members/successful-asian-lady-boss-red-blazer-holding-clipboard-with-documens-pen-working-looking-happy-white-background.jpg" class="member-block-image img-fluid" alt="">
+
+                                    <ul class="social-icon">
+                                        <li class="social-icon-item">
+                                            <a href="#" class="social-icon-link bi-whatsapp"></a>
+                                        </li>
+                                        <li class="social-icon-item">
+                                            <a href="#" class="social-icon-link bi-wechat"></a>
+                                        </li>
+                                    </ul>
+                                </div>
+
+                                <div class="member-block-info d-flex align-items-center">
+                                    <h4>Sandy</h4>
+
+                                    <p class="ms-auto">英語老師</p>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+
+
+            <section class="section-bg-image">
+                <svg viewBox="0 0 1265 144" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><path fill="rgba(255, 255, 255, 1)" d="M 0 40 C 164 40 164 20 328 20 L 328 20 L 328 0 L 0 0 Z" stroke-width="0"></path> <path fill="rgba(255, 255, 255, 1)" d="M 327 20 C 445.5 20 445.5 89 564 89 L 564 89 L 564 0 L 327 0 Z" stroke-width="0"></path> <path fill="rgba(255, 255, 255, 1)" d="M 563 89 C 724.5 89 724.5 48 886 48 L 886 48 L 886 0 L 563 0 Z" stroke-width="0"></path><path fill="rgba(255, 255, 255, 1)" d="M 885 48 C 1006.5 48 1006.5 67 1128 67 L 1128 67 L 1128 0 L 885 0 Z" stroke-width="0"></path><path fill="rgba(255, 255, 255, 1)" d="M 1127 67 C 1196 67 1196 0 1265 0 L 1265 0 L 1265 0 L 1127 0 Z" stroke-width="0"></path></svg>
+
+                <div class="container">
+                    <div class="row">
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+                        <!-- <div class="col-lg-6 col-12">
+                            <div class="section-bg-image-block">
+                                <h2 class="mb-lg-3">Start learning Today!</h2>
+
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor ut labore et dolore.</p>
+
+                                <form action="#" method="get" class="custom-form mt-lg-4 mt-2" role="form">
+                                    <div class="input-group input-group-lg">
+                                        <span class="input-group-text bi-envelope" id="basic-addon1"></span>
+
+                                        <input type="email" name="email" id="email" pattern="[^ @]*@[^ @]*" class="form-control" placeholder="Email address" required="">
+
+                                        <button type="submit" class="form-control">Contact Us</button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div> -->
+
+                    </div>
+                </div>
+
+                <svg viewBox="0 0 1265 144" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><path fill="rgba(255, 255, 255, 1)" d="M 0 40 C 164 40 164 20 328 20 L 328 20 L 328 0 L 0 0 Z" stroke-width="0"></path> <path fill="rgba(255, 255, 255, 1)" d="M 327 20 C 445.5 20 445.5 89 564 89 L 564 89 L 564 0 L 327 0 Z" stroke-width="0"></path> <path fill="rgba(255, 255, 255, 1)" d="M 563 89 C 724.5 89 724.5 48 886 48 L 886 48 L 886 0 L 563 0 Z" stroke-width="0"></path><path fill="rgba(255, 255, 255, 1)" d="M 885 48 C 1006.5 48 1006.5 67 1128 67 L 1128 67 L 1128 0 L 885 0 Z" stroke-width="0"></path><path fill="rgba(255, 255, 255, 1)" d="M 1127 67 C 1196 67 1196 0 1265 0 L 1265 0 L 1265 0 L 1127 0 Z" stroke-width="0"></path></svg>
+            </section>
+
+            <section class="membership-section section-padding" id="section_3">
+                <div class="container">
+                    <div class="row">
+
+                        <div class="col-lg-12 col-12 text-center mx-auto mb-lg-5 mb-4">
+                            <h2><span>為什麼</span> 選擇透過 SaladKids 學習？</h2>
+                            我們的老師讓 SaladKids 成為最好的線上私人學習平台 <br>全球英語學習平台！ 
+                        </div>
+                        
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-4 col-md-4 col-sm-12 mb-4">
+                            <div style="text-align: center;">
+                                <img src="images/service/Image_1_cert.jpg" alt="" class="card-img-top" style="width: 224px; height: 194px;">
+                                <div class="card-body">
+                                    <div><br></div>
+                                    <h5 class="card-title">認證導師</h5>
+                                    <div><br></div>
+                                    <p class="card-text">在 SaladKids，所有導師都經過驗證且經驗豐富，引導孩子們自信地閱讀和說話，透過激發終身學習和快樂交流的有趣課程培養技能。</p>
+                                </div>
+                            </div>
+                        </div>
+                
+                        <div class="col-lg-4 col-md-4 col-sm-12 mb-4">
+                            <div style="text-align: center;">
+                                <img src="images/service/Image_1_schedule.jpg" alt="" class="card-img-top" style="width: 224px; height: 194px;">
+                                <div class="card-body">
+                                    <div><br></div>
+                                    <h5 class="card-title">靈活的時間表</h5>
+                                    <div><br></div>
+                                    <p class="card-text">在SaladKids，家長可以彈性安排學習時間，依照自己忙碌的生活安排適當的時間。透過個人化的線上課程，孩子們可以隨時隨地自信地提高英語水平，並在專業導師的指導下，在學習的每一步都獲得支持。</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-4 col-md-4 col-sm-12 mb-4">
+                            <div style="text-align: center;">
+                                <img src="images/service/Image_001_green.jpg" alt="" class="card-img-top" style="width: 224px; height: 194px;">
+                                <div class="card-body">
+                                    <div><br></div>
+                                    <h5 class="card-title">價格實惠</h5>
+                                    <div><br></div>
+                                    <p class="card-text">SaladKids 為所有想要輕鬆自信地學習或提高英語能力的人提供價格合理的英語課程，並提供靈活的時間安排、專業導師和個人化的支援。</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-4 col-md-4 col-sm-12 mb-4">
+                            <div style="text-align: center;">
+                                <img src="images/service/img_privateC1.png" alt="" class="card-img-top" style="width: 224px; height: 194px;">
+                                <div class="card-body">
+                                    <div><br></div>
+                                    <h5 class="card-title">私人學習</h5>
+                                    <div><br></div>
+                                    <p class="card-text">SaladKids 私人課程提供個人化的一對一課程，由專業導師根據每個孩子的需求和學習進度量身定制。這能增強孩子的自信心，加速學習，並確保他們在口語、閱讀或文法方面取得顯著進步。</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-4 col-md-4 col-sm-12 mb-4">
+                            <div style="text-align: center;">
+                                <img src="images/service/img_groupC.png" alt="" class="card-img-top" style="width: 224px; height: 194px;">
+                                <div class="card-body">
+                                    <div><br></div>
+                                    <h5 class="card-title">小組學習</h5>
+                                    <div><br></div>
+                                    <p class="card-text">SaladKids 的小組課程讓孩子們可以即時與同儕學習，從而促進協作和溝通。這鼓勵團隊合作、自信和積極的口語練習，有效提升他們的社交和語言技能。</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-4 col-md-4 col-sm-12 mb-4">
+                            <div style="text-align: center;">
+                                <img src="images/service/img_mixC.png" alt="" class="card-img-top" style="width: 224px; height: 194px;">
+                                <div class="card-body">
+                                    <div><br></div>
+                                    <h5 class="card-title">混合式學習</h5>
+                                    <div><br></div>
+                                    <p class="card-text">SaladKids 提供線上線下學習，讓孩子們可以與老師面對面交流。這種混合式學習模式能夠促進個人化互動，增強自信心、提升社交技能，並加深學生的參與度，進而有利於他們的整體語言發展。</p>
+                                </div>
+                            </div>
+                        </div>
+
+                </div>
+            </section>
+            
+<section class="service-section" id="section_3" style="padding-bottom: 50px;">
+        <div class="container">
+            <div class="row">
+
+                <div class="col-lg-12 col-12 text-center mx-auto mb-lg-5 mb-4">
+                    <h2><span>我們</span> 的服務</h2>
+                    我們的老師使 SaladKids 成為世界上最好的線上和私人學習英語語言學習平台！ 
+                </div>
+                
+            </div>
+            <div class="row">
+                <div class="col-lg-4 col-md-4 col-sm-12 mb-4">
+                    <div style="text-align: center;">
+                        <img src="images/service/Phonic_.jpg" alt="" class="card-img-top" style="width: 336px; height: 224px; border-radius: 15px;">
+                        <div class="card-body">
+                            <div><br></div>
+                            <h5 class="card-title">語音閱讀課</h5>
+                            <div><br></div>
+                            <p class="card-text">语言的语音系统</p>
+                        </div>
+                    </div>
+                </div>
+        
+                <div class="col-lg-4 col-md-4 col-sm-12 mb-4">
+                    <div style="text-align: center;">
+                        <img src="images/service/img_Speaking.jpg" alt="" class="card-img-top" style="width:  336px; height: 224px; border-radius: 15px;">
+                        <div class="card-body">
+                            <div><br></div>
+                            <h5 class="card-title">口語閱讀課</h5>
+                            <div><br></div>
+                            <p class="card-text">清晰地口頭表達想法</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-4 col-sm-12 mb-4">
+                    <div style="text-align: center;">
+                        <img src="images/service/img_readingC.png" alt="" class="card-img-top" style="width:  336px; height: 224px; border-radius: 15px;">
+                        <div class="card-body">
+                            <div><br></div>
+                            <h5 class="card-title">閱讀讀課</h5>
+                            <div><br></div>
+                            <p class="card-text">理解書寫文字的含義</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-4 col-sm-12 mb-4">
+                    <div style="text-align: center;">
+                        <img src="images/service/img_oralC.png" alt="" class="card-img-top" style="width: 336px; height: 224px; border-radius: 15px;">
+                        <div class="card-body">
+                            <div><br></div>
+                            <h5 class="card-title">聽力讀課</h5>
+                            <div><br></div>
+                            <p class="card-text">理解口語 </p>
+                        </div>
+                    </div>
+                </div>
+        
+                <div class="col-lg-4 col-md-4 col-sm-12 mb-4">
+                    <div style="text-align: center;">
+                        <img src="images/service/img_writing.png" alt="" class="card-img-top" style="width:  336px; height: 224px; border-radius: 15px;">
+                        <div class="card-body">
+                            <div><br></div>
+                            <h5 class="card-title">寫作讀課</h5>
+                            <div><br></div>
+                            <p class="card-text"> 透過文本傳達想法</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-4 col-sm-12 mb-4">
+                    <div style="text-align: center;">
+                        <img src="images/service/img_grammar1.png" alt="" class="card-img-top" style="width:  336px; height: 224px; border-radius: 15px;">
+                        <div class="card-body">
+                            <div><br></div>
+                            <h5 class="card-title">文法讀課</h5>
+                            <div><br></div>
+                            <p class="card-text">語言規則和結構 </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-6 col-md-6 col-sm-12 mb-4">
+                    <div style="text-align: center;">
+                        <img src="images/service/img_esl.png" alt="" class="card-img-top" style="width:  336px; height: 224px; border-radius: 15px;">
+                        <div class="card-body">
+                            <div><br></div>
+                            <h5 class="card-title">ESL 讀課</h5>
+                            <div><br></div>
+                            <p class="card-text"> 透過文本傳達想法</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-6 col-md-6 col-sm-12 mb-4">
+                    <div style="text-align: center;">
+                        <img src="images/service/img_toefl.png" alt="" class="card-img-top" style="width:  336px; height: 224px; border-radius: 15px;">
+                        <div class="card-body">
+                            <div><br></div>
+                            <h5 class="card-title">TOEFL 讀課</h5>
+                            <div><br></div>
+                            <p class="card-text">語言規則和結構 </p>
+                        </div>
+                    </div>
+                </div>
+        </div>
+         <div class="col-lg-6 col-12 mx-auto">
+                            <div class="section-bg-image-block">
+                                <h2 class="mb-lg-3 text-center">今天開始學習！</h2>
+
+                                <p class="mb-lg-3 text-center">不要等待，立即預訂 <b>"免費課程"!</b></p>
+
+                                <form action="#" method="get" class="custom-form mt-lg-4 mt-2" role="form">
+                                    <div class="input-group input-group-lg">
+                                        <span class="input-group-text bi-envelope" id="basic-addon1"></span>
+
+                                        <input type="email" name="email" id="email" pattern="[^ @]*@[^ @]*" class="form-control" placeholder="電子郵件" required="">
+
+                                        <button type="submit" class="form-control">聯絡我們</button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+</section>
+
+
+
+            <section class="events-section section-bg section-padding" id="section_4">
+                <div class="container">
+                    <div class="row">
+
+                        <div class="col-lg-12 col-12">
+                            <h2 class="mb-lg-3">最新消息</h2>
+                        </div>
+
+                        <div class="row custom-block custom-block-bg mb-4">
+                            <!-- <div class="col-lg-2 col-md-4 col-12 order-2 order-md-0 order-lg-0">
+                                <div class="custom-block-date-wrap d-flex d-lg-block d-md-block align-items-center mt-3 mt-lg-0 mt-md-0">
+                                    <h6 class="custom-block-date mb-lg-1 mb-0 me-3 me-lg-0 me-md-0">24</h6>
+                                    
+                                    <strong class="text-white">Feb 2048</strong>
+                                </div>
+                            </div> -->
+
+                            <div class="col-lg-4 col-md-8 col-12 order-1 order-lg-0">
+                                <div class="custom-block-image-wrap">
+                                    <a href="news-detail-online_tra.html">
+                                        <img src="images/news/Online_336x224.png" class="custom-block-image img-fluid" alt="">
+
+                                        <i class="custom-block-icon bi-link"></i>
+                                    </a>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-7 col-12 order-3 order-lg-0">
+                                <div class="custom-block-info mt-2 mt-lg-0">
+                                    <a href="news-detail-online_tra.html" class="events-title mb-3">私人輔導（線上）</a>
+
+                                    <p class="mb-0">個人化英語輔導根據每個孩子的需求提供個人化學習。它價格實惠，能夠增強自信心，提升詞彙和文法技能，並能集中註意力。孩子們在充滿支持和愉悅的環境中按照自己的步調進步。</p>
+
+                                    <div class="d-flex flex-wrap border-top mt-4 pt-3">
+
+                                        <div class="mb-4 mb-lg-0">
+                                            <div class="d-flex flex-wrap align-items-center mb-1">
+                                                <span class="custom-block-span">地點:</span>
+
+                                                <p class="mb-0">線上</p>
+                                            </div>
+
+                                            <!-- <div class="d-flex flex-wrap align-items-center">
+                                                <span class="custom-block-span">Ticket:</span>
+
+                                                <p class="mb-0">$250</p>
+                                            </div> -->
+                                        </div>
+
+                                        <div class="d-flex align-items-center ms-lg-auto">
+                                            <a href="news-detail-online_tra.html" class="btn custom-btn">閱讀更多</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row custom-block custom-block-bg mb-4">
+                            <div class="col-lg-4 col-md-8 col-12 order-1 order-lg-0">
+                                <div class="custom-block-image-wrap">
+                                    <a href="news-detail-private_tra.html">
+                                        <img src="images/news/One-001.jpg" class="custom-block-image img-fluid" alt="">
+
+                                        <i class="custom-block-icon bi-link"></i>
+                                    </a>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-7 col-12 order-3 order-lg-0">
+                                <div class="custom-block-info mt-2 mt-lg-0">
+                                    <a href="news-detail-private_tra.html" class="events-title mb-3">私人輔導（面對面）</a>
+
+                                    <p class="mb-0">在馬卡蒂，一位經驗豐富的英語老師在短短一個月內幫助一名9歲女孩提高了口語、寫作和閱讀能力。透過耐心有趣的課程，女孩增強了自信，掌握了各種技能。最終，她能夠流利地說話、清晰地書寫，並且熱愛學習英語，為美好的未來做好了準備。</p>
+
+                                    <div class="d-flex flex-wrap border-top mt-4 pt-3">
+
+                                        <div class="mb-4 mb-lg-0">
+                                            <div class="d-flex flex-wrap align-items-center mb-1">
+                                                <span class="custom-block-span">地點:</span>
+
+                                                <p class="mb-0">馬尼拉/馬卡蒂</p>
+                                            </div>
+
+                                        </div>
+
+                                        <div class="d-flex align-items-center ms-lg-auto">
+                                            <a href="news-detail-private_tra.html" class="btn custom-btn">閱讀更多</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row custom-block custom-block-bg mb-4">
+                            <div class="col-lg-4 col-md-8 col-12 order-1 order-lg-0">
+                                <div class="custom-block-image-wrap">
+                                    <p href=".html">
+                                        <img src="images/news/All-001.png" class="custom-block-image img-fluid" alt="">
+
+                                        <i class="custom-block-icon bi-link"></i>
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-7 col-12 order-3 order-lg-0">
+                                <div class="custom-block-info mt-2 mt-lg-0">
+                                    <p href="." class="events-title mb-3">兒童線上英語課程（學齡前兒童）</p>
+
+                                    <p class="mb-0">兒童線上課程是一款獨特的課程，旨在提升兒童的英語技能，充分考慮了兒童的發展階段、年齡特徵以及學習英語的特定需求。課程打破了傳統的學習環境，讓學生以更生動、更愉悅的方式學習材料。透過在真實英語場景中進行實際交流，學習者將無縫接軌、說、讀、寫和翻譯等技能。</p>
+
+                                    <div class="d-flex flex-wrap border-top mt-4 pt-3">
+
+                                        <div class="mb-4 mb-lg-0">
+                                            <div class="d-flex flex-wrap align-items-center mb-1">
+                                                <span class="custom-block-span">地點:</span>
+
+                                                <p class="mb-0">線上或離線</p>
+                                            </div>
+                                        </div>
+
+                                        <div class="d-flex align-items-center ms-lg-auto">
+                                            <p href=".html" class="btn custom-btn">閱讀更多</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+            </section>
+
+
+            <section class="contact-section section-padding" id="section_5">
+                <div class="container">
+                  <div class="row">
+                    <div class="col-lg-5 col-12">
+                      <form id="contact-form" class="custom-form contact-form" role="form">
+                        <h2 class="mb-4 pb-2">聯絡我們</h2>
+              
+                        <div class="row">
+                          <div class="col-lg-6 col-md-6 col-12">
+                            <div class="form-floating">
+                              <input
+                                type="text"
+                                name="full-name"
+                                id="full-name"
+                                class="form-control"
+                                placeholder="Full Name"
+                                required
+                              />
+                              <label for="full-name" style="color: lightblue;">全名</label>
+                            </div>
+                          </div>
+              
+                          <div class="col-lg-6 col-md-6 col-12">
+                            <div class="form-floating">
+                              <input
+                                type="email"
+                                name="email"
+                                id="email"
+                                pattern="[^ @]+@[^ @]+"
+                                class="form-control"
+                                placeholder="Email address"
+                                required
+                              />
+                              <label for="email" style="color: lightblue;">電子郵件</label>
+                            </div>
+                          </div>
+              
+                          <div class="col-lg-12 col-12">
+                            <div class="form-floating">
+                              <textarea
+                                class="form-control"
+                                id="message"
+                                name="message"
+                                placeholder="Describe message here"
+                                required
+                              ></textarea>
+                              <label for="message" style="color: lightblue;">你想學什麼以及你的聯絡電話（微信/viber）</label>
+                            </div>
+              
+                            <button type="submit" id="send-button" class="form-control mt-3">提交訊息</button>
+                          </div>
+                        </div>
+                      </form>
+                      <div id="response-message" style="margin-top: 10px;"></div>
+                    </div>
+              
+                    <div class="col-lg-6 col-12">
+                      <div class="contact-info mt-5">
+                        <div class="contact-info-item">
+                          <div class="contact-info-body">
+                            <!-- <strong>Hong Kong & Manila</strong> -->
+                            <p class="mt-2 mb-1" style="font-size: 28px;"">
+                              <!-- <a href="tel:010-020-0340" class="contact-link">(+63) 010-020-0340</a> -->
+                              <strong>香港 和 馬尼拉</strong>
+                              <br>
+                            </p>
+                            <!-- <p class="mb-0">
+                              <a href="mailto:info@company.com" class="contact-link">saladkids@zohomail.com</a> -->
+                            </p>
+                          </div>
+                          <div class="contact-info-footer">
+                            <!-- <a href="#">Message Us</a> -->
+                            <p style="color: aliceblue;">saladkids@zohomail.com</p>
+                          </div>
+                        </div>
+                        <img src="images/WorldMap.svg" class="img-fluid" alt="" />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </section>
+        </main>
+
+        <footer class="site-footer">
+            <div class="container">
+                <div class="row">
+
+                    <div class="col-lg-6 col-12 me-auto mb-5 mb-lg-0">
+                        <a class="navbar-brand d-flex align-items-center" href="index.html">
+                            <img src="images/logo.png" class="navbar-brand-image img-fluid" alt="">
+                            <span class="navbar-brand-text">
+                                SaladKids
+                                <small>線上和私人教育</small>
+                            </span>
+                        </a>
+                    </div>
+
+                    <div class="col-lg-3 col-12">
+                        <h5 class="site-footer-title mb-4">開門時間</h5>
+
+                        <p class="d-flex border-bottom pb-3 mb-3 me-lg-3">
+                            <span>星期一到五</span>
+                            8:30 AM - 6:00 PM
+                        </p>
+
+                        <p class="d-flex me-lg-3">
+                            <span>星期六</span>
+                            8:30 AM - 6:30 PM
+                        </p>
+                        <br>
+                        <p class="copyright-text">版權 © 2025 SaladKids</p>
+                    </div>
+
+                        <div class="col-lg-2 col-12 ms-auto">
+                            <ul class="social-icon mt-lg-5 mt-3 mb-4">
+                                <li class="social-icon-item">
+                                    <a href="#" class="social-icon-link bi-wechat"></a>
+                                </li>
+
+                                <li class="social-icon-item">
+                                    <a href="#" class="social-icon-link bi-facebook"></a>
+                                </li>
+
+                                <li class="social-icon-item">
+                                    <a href="#" class="social-icon-link bi-whatsapp"></a>
+                                </li>
+                            </ul>
+                            <!-- <p class="copyright-text">Design: <a rel="nofollow" href="" target="_blank">Test</a></p> -->
+                            
+                        </div>
+
+                </div>
+            </div>
+
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#8FC2E3" fill-opacity="1" d="M0,224L34.3,192C68.6,160,137,96,206,90.7C274.3,85,343,139,411,144C480,149,549,107,617,122.7C685.7,139,754,213,823,240C891.4,267,960,245,1029,224C1097.1,203,1166,181,1234,160C1302.9,139,1371,117,1406,106.7L1440,96L1440,320L1405.7,320C1371.4,320,1303,320,1234,320C1165.7,320,1097,320,1029,320C960,320,891,320,823,320C754.3,320,686,320,617,320C548.6,320,480,320,411,320C342.9,320,274,320,206,320C137.1,320,69,320,34,320L0,320Z"></path></svg>
+        </footer>
+
+
+        <!-- JAVASCRIPT FILES -->
+        <script src="js/jquery.min.js"></script>
+        <script src="js/bootstrap.bundle.min.js"></script>
+        <script src="js/jquery.sticky.js"></script>
+        <script src="js/click-scroll.js"></script>
+        <script src="js/animated-headline.js"></script>
+        <script src="js/modernizr.js"></script>
+        <script src="js/custom.js"></script>
+
+        <script>
+            const form = document.getElementById("contact-form");
+            const responseMessage = document.getElementById("response-message");
+            const sendButton = document.getElementById("send-button");
+          
+            form.addEventListener("submit", function (e) {
+              e.preventDefault();
+          
+              // Change text color to red and remove placeholders
+              const inputs = form.querySelectorAll("input, textarea");
+              inputs.forEach((input) => {
+                input.style.color = "#E07A5F";
+                input.placeholder = "";
+              });
+          
+              // Disable the send button
+              sendButton.disabled = true;
+          
+              const formData = {
+                "full-name": form["full-name"].value,
+                email: form.email.value,
+                message: form.message.value,
+              };
+          
+              fetch("https://submit-form.com/M23JvXX52", {
+                method: "POST",
+                headers: {
+                  "Content-Type": "application/json",
+                  Accept: "application/json",
+                },
+                body: JSON.stringify(formData),
+              })
+              .then(function (response) {
+                if (response.ok) {
+                    responseMessage.textContent = "Thank you for your message and we will contact you shortly!";
+                    responseMessage.style.color = "#E07A5F";  // Set the message color here
+                    form.reset();
+                } else {
+                    responseMessage.textContent = "Failed to send message. Please try again.";
+                    responseMessage.style.color = "#E07A5F"; // Reset color or set error color if needed
+                    // Re-enable the button on failure
+                    sendButton.disabled = false;
+                    inputs.forEach((input) => {
+                    input.style.color = "#E07A5F";
+                    if (!input.value) {
+                        if (input.name === "full-name") input.placeholder = "Full Name";
+                        if (input.name === "email") input.placeholder = "Email address";
+                        if (input.name === "message") input.placeholder = "Describe message here";
+                    }
+                    });
+                }
+                })
+                .catch(function (error) {
+                  responseMessage.textContent = "Network error, please try again later.";
+                  console.error(error);
+                  // Re-enable the button on error
+                  sendButton.disabled = false;
+                });
+            });
+          </script>
+
+            <!-- This is the form for Free trail session -->
+            <script>
+                const form2 = document.getElementById("contact-form-2");
+            const responseMessage2 = document.getElementById("response-message-2");
+            const sendButton2 = document.getElementById("send-button-2");
+
+            form2.addEventListener("submit", function (e) {
+            e.preventDefault();
+
+            // Change text color and clear placeholders
+            const inputs = form2.querySelectorAll("input, textarea");
+            inputs.forEach((input) => {
+                input.style.color = "#E07A5F";
+                input.placeholder = "";
+            });
+
+            // Disable the send button
+            sendButton2.disabled = true;
+
+            const formData = {
+                "full-name": form2["full-name"].value,
+                email: form2.email.value,
+                message: form2.message.value,
+            };
+
+            fetch("https://submit-form.com/M23JvXX52", {  // Use your actual FormSpark endpoint here
+                method: "POST",
+                headers: {
+                "Content-Type": "application/json",
+                Accept: "application/json",
+                },
+                body: JSON.stringify(formData),
+            })
+                .then(function (response) {
+                if (response.ok) {
+                    responseMessage2.textContent =
+                    "Thank you for your message and we will contact you shortly!";
+                    responseMessage2.style.color = "#E07A5F";
+                    form2.reset();
+                } else {
+                    responseMessage2.textContent = "Failed to send message. Please try again.";
+                    responseMessage2.style.color = "#E07A5F";
+                    sendButton2.disabled = false;
+                    inputs.forEach((input) => {
+                    input.style.color = "#E07A5F";
+                    if (!input.value) {
+                        if (input.name === "full-name") input.placeholder = "Full Name";
+                        if (input.name === "email") input.placeholder = "Email address";
+                        if (input.name === "message") input.placeholder = "Describe message here";
+                    }
+                    });
+                }
+                })
+                .catch(function (error) {
+                responseMessage2.textContent = "Network error, please try again later.";
+                console.error(error);
+                sendButton2.disabled = false;
+                });
+            });
+            </script>
+
+    </body>
+</html>
